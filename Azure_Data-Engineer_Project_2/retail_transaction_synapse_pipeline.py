@@ -1,6 +1,6 @@
 # Azure Synapse Analytics - Retail Transaction Data Engineering Pipeline
 
-from pyspark.sql import functions as F
+from pyspark.sql.functions import col, to_date, lower
 
 # 1. Read Bronze data
 bronze_path = (
